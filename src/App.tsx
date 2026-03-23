@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import Lista from './Lista'
 import './App.css'
 
 function App() {
@@ -113,6 +114,7 @@ function App() {
       </section>
 
       <div className="ticks"></div>
+      <Lista />
       <section id="spacer"></section>
     </>
   )

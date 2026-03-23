@@ -6,9 +6,8 @@ function Lista() {
 
     return (
         lista.map((elemento, indice) => {
-            return 
             <ListaComponent key={indice} elemento={elemento} />
-        }
+        })
     )
 }
 export default Lista;

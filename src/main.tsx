@@ -5,6 +5,7 @@ import App from './App.tsx'
 import Esempio from './Esempio.tsx'
 import EsempioConProps from './EsempioConProps.tsx'
 import Bordo from './Bordo.tsx'
+import Lista from './Lista.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -20,5 +21,6 @@ createRoot(document.getElementById('root')!).render(
     <Bordo>
       <Esempio />
     </Bordo>
+    <Lista />
   </StrictMode>,
 )

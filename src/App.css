@@ -187,3 +187,8 @@
   border: solid 2px;
   color: white;
 }
+
+.maggiorenne{
+  color: red;
+  font-weight: bold;
+}

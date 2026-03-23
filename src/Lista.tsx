@@ -21,7 +21,8 @@ function ListaComponent(props: { elemento: { nome: string, cognome: string, eta:
 
     return (
         <div>
-            <p>{nome} {cognome}, {eta>=18 ? 'Maggiorenne' : 'Minorenne'}</p>
+            <p className = {eta>=18 ?"maggiorenne" : ''} >
+            {nome} {cognome}, {eta>=18 ? 'Maggiorenne' : 'Minorenne'}</p>
         </div>
     )
 

@@ -1,12 +1,13 @@
 function Lista() {
     const lista = [
-        { nome: "Mario", cognome: "Rossi", eta: 30 },
-        { nome: "Luigi", cognome: "Verdi", eta: 15 }
+        { nome: "Valentina", cognome: "Borello", eta: 30 },
+        { nome: "Kodjovi", cognome: "Devi", eta: 15 },
+        { nome: "Manuel", cognome: "Gajoni", eta: 22 },
     ]
 
     return (
         <>
-        {lista.map((elemento, indice) => {
+        {lista.filter(persona => persona.eta >= 18).map((elemento, indice) => {
             return <ListaComponent key={indice} elemento={elemento} />
         })}
         </>
@@ -19,10 +20,15 @@ function ListaComponent(props: { elemento: { nome: string, cognome: string, eta:
     const cognome = props.elemento.cognome;
     const eta = props.elemento.eta;
 
+    function handleClick(){
+        alert(`Hai cliccato su ${nome} ${cognome}`);
+    }
+
     return (
-        <div>
+        <div onClick={handleClick}>
             <p className = {eta>=18 ?"maggiorenne" : ''} >
             {nome} {cognome}, {eta>=18 ? 'Maggiorenne' : 'Minorenne'}</p>
+            {nome==="Mario" && <p>Il nome è Mario</p>}
         </div>
     )
 
@@ -44,3 +50,4 @@ if(eta >= 18) {
 
 
 }
+

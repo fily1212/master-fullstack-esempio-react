@@ -6,9 +6,11 @@ import Esempio from './Esempio.tsx'
 import EsempioConProps from './EsempioConProps.tsx'
 import Bordo from './Bordo.tsx'
 import Lista from './Lista.tsx'
+import EsempioState from './EsempioState.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <EsempioState />
     <Esempio />
     <Esempio />
     {/* <Lista /> 
